@@ -1,0 +1,121 @@
+.results {
+   width: 90%;
+   max-width: 900px;
+   background-color: var(--main-grey);
+   padding: 20px;
+   transition: var(--main-animation);
+   border-radius: var(--main-br);
+   border: 3px solid var(--main-maroon);
+}
+
+.results__percent {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 28px;
+   font-weight: 800;
+   font-family: var(--main-font);
+   /* margin-bottom: 40px; */
+}
+.results_text_percent {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 22px;
+   font-weight: 800;
+   font-family: var(--main-font);
+   max-width: 380px;
+   margin: -45px auto 0;
+}
+.results_about_the_course_title {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 24px;
+   font-weight: 800;
+   font-family: var(--main-font);
+   margin-bottom: 40px;
+}
+.results_about_the_course {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 400;
+   font-family: var(--main-font);
+}
+
+.result_btn_wrapper {
+   display: flex;
+   justify-content: space-around;
+}
+.results_btn_menu {
+   background-color: var(--main-blue);
+   display: block;
+   width: 48%;
+   max-width: 300px;
+   height: 60px;
+   border-radius: 34px;
+}
+.results__btn-text {
+   display: block;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #ffffff;
+   font-weight: 500;
+   border: 3px solid #fff;
+}
+
+.results__diagram-wrapper {
+   width: 50%;
+}
+.wrapper_results_diagrams {
+   /* display: flex; */
+   width: 50%;
+   display: flex;
+   flex-wrap: wrap;
+   /* align-items: center; */
+   padding-top: 50px;
+}
+.results__content-wrapper {
+   display: flex;
+   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+   #diagram {
+      height: 200px;
+      width: 200px;
+   }
+   .results__percent {
+      font-size: 20px;
+   }
+   .results_text_percent {
+      font-size: 18px;
+   }
+}
+@media screen and (max-width: 520px) {
+   #diagram {
+      height: 180px;
+      width: 180px;
+   }
+   .results__percent {
+      font-size: 18px;
+   }
+   .results_text_percent {
+      margin-top: 0;
+      font-size: 16px;
+   }
+   .results__btn-text {
+      font-size: 16px;
+   }
+}
+
+@media screen and (max-width: 430px) {
+   #diagram {
+      height: 160px;
+      width: 160px;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   #diagram {
+      height: 125px;
+      width: 125px;
+   }
+}

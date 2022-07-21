@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>question</title>
+</head>
+
+<body>
+    <div class="question">
+        <h2 class="question__title">Расшифровка css?</h2>
+        <form class="question__form">
+            <div class="question__form--label-wrapper">
+                <input type="radio" class="question__form--variant" id="question__form--answer1" data-question-index="1"
+                    name="answer" value="css">
+                <label class="question__form--label" for="question__form--answer1"
+                    id="question__form--label-1">Javascript</label>
+            </div>
+            <div class="question__form--label-wrapper">
+                <input type="radio" class="question__form--variant" id="question__form--answer2" data-question-index="2"
+                    name="answer" value="css">
+                <label class="question__form--label" for="question__form--answer2"
+                    id="question__form--label-2">C#</label>
+            </div>
+            <div class="question__form--label-wrapper">
+                <input type="radio" class="question__form--variant" id="question__form--answer3" data-question-index="3"
+                    name="answer" value="css">
+                <label class="question__form--label" for="question__form--answer3"
+                    id="question__form--label-3">Python</label>
+            </div>
+            <div class="question__form--label-wrapper">
+                <input type="radio" class="question__form--variant" id="question__form--answer4" data-question-index="4"
+                    name="answer" value="css">
+                <label class="question__form--label" id="question__form--label-4"
+                    for="question__form--answer4">Cascading style sheets</label>
+            </div>
+        </form>
+        <button type="question__submit" class="question__submit">Submit</button>
+        <div class="question__buttons--wrapper">
+            <ul class="question__controls-wrapper">
+                <li class="question__controls-item"><button class="question__btn question__btn--arrow left"
+                        data-value='left'>&#60;</button></li>
+                <li class="question__controls-item"><button class="question__btn question__btn--finish">Finish</button>
+                </li>
+                <li class="question__controls-item"><button
+                        class="question__btn question__btn--arrow right data-value='right'">&#62;</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="author" content="HOPE team" />
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon" />
+    <title>IT test</title>
+</head>
+
+<body>
+    <span class="question__counter hidden-modal">9/10</span>
+    <div class="wrapper__header__test_it hidden-modal">
+        <header class="tic_tac__header">
+            <div class="header__content">
+                <a target="_blank" href="https://github.com/DmytroKolisnyk2/GameOFTeens_JAVASCRIPT"> <img
+                        class="content__img" src="./img/logo.jpg" alt="logo_team" /></a>
+                <h1 class="content__title">it test by HOPE team</h1>
+                <h2 class="content__reset settings_btn--js">Налаштування</h2>
+            </div>
+        </header>
+    </div>
+    <main class="main">
+        <section class="start modal">
+            <div class="wrapper_btn_start">
+                <button class="settings_btn settings_btn--js">
+                    <img class="settings_btn_img" class="settings-modal__audio-ico hidden-modal" src="./img/logo.jpg"
+                        alt="logo_team" />
+                </button>
+                <button class="about_test">?</button>
+            </div>
+            <div class="start__content-wrapper">
+                <h2 class="start_screen_title">IT тест від команди HOPE</h2>
+                <div class="start__controls-wrapper">
+                    <button class="start__btn start__open-modal start__btn-text" type="button">почати</button>
+                    <button type="button"
+                        class="start__author start__author--js start__open-modal start__controls">Автори</button>
+                </div>
+            </div>
+        </section>
+        <section class="backdrop_authors_modal modal hidden-modal" id="authors">
+            <div class="authors-modal modal">
+                <div data-modal="authors" class="authors_close close-btn--js">
+                    <svg class="authors-modal__close-btn">
+                        <use href="./img/symbol-defs.svg#icon-cross"></use>
+                    </svg>
+                </div>
+                <div class="authors_content">
+                    <h2 class="authors_title">автори тесту</h2>
+                    <div class="authors_wrapper">
+                        <div class="authors_card">
+                            <picture>
+                                <source srcset="./img/max.webp" type="image/webp" />
+                                <img class="authors_img" src="./img/max.jpg" alt="Max" />
+                            </picture>
+                            <h4 class="authors_name">Макс Попсуй</h4>
+                            <p class="authors_text">12 років. Живу в Київі.</p>
+                        </div>
+                        <div class="authors_card">
+                            <picture>
+                                <source srcset="./img/authors_Mari.webp" type="image/webp" />
+                                <img class="authors_img" src="./img/authors_Mari.png" alt="Mari" />
+                            </picture>
+                            <h4 class="authors_name">Марія Грипич</h4>
+                            <p class="authors_text">HR менеджер</p>
+                        </div>
+                        <div class="authors_card">
+                            <picture>
+                                <source srcset="./img/authors_Dmytro.webp" type="image/webp" />
+                                <img class="authors_img" src="./img/authors_Dmytro.png" alt="Dmytro" />
+                            </picture>
+                            <h4 class="authors_name">Колісник Дмитро</h4>
+                            <p class="authors_text">Лідер команди. 16 років.</p>
+                        </div>
+                        <div class="authors_card">
+                            <picture>
+                                <source srcset="./img/Igor.webp" type="image/webp" />
+                                <img class="authors_img" src="./img/igor.jpg" alt="Igor" />
+                            </picture>
+                            <h4 class="authors_name">Ігор Якіб'юк</h4>
+                            <p class="authors_text">Front End назавжди</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="authors_footer">
+                    <a target="_blank" href="https://github.com/DmytroKolisnyk2/GameOFTeens_JAVASCRIPT">
+                        <picture>
+                            <source srcset="./img/logo.ico" type="image/webp" />
+                            <img class="authors-footer__img" src="./img/logo.ico" alt="logo" />
+                        </picture>
+                    </a>
+                    <p class="authors_footer__text">2021 команда HOPE &#169; Всі права захищені</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="backdrop_settings_modal modal hidden-modal" id="settings">
+            <div class="settings-modal modal">
+                <svg class="settings-modal__close-btn close-btn--js" data-modal="settings">
+                    <use href="./img/symbol-defs.svg#icon-cross"></use>
+                </svg>
+
+                <h2 class="settings-modal__headline">Налаштування</h2>
+                <h3 class="settings-modal__caption">Звуки</h3>
+                <div class="settings-modal__audio-wrapper">
+                    <svg id="high" class="settings-modal__audio-ico">
+                        <use href="./img/symbol-defs.svg#icon-volume-high"></use>
+                    </svg>
+                    <svg id="mute" class="settings-modal__audio-ico hidden-modal">
+                        <use href="./img/symbol-defs.svg#icon-volume-mute"></use>
+                    </svg>
+
+                    <input type="range" min="0" max="20" class="settings-modal__audio-range" />
+                </div>
+                <h3 class="settings-modal__caption">Фон</h3>
+                <div class="settings-modal__background-wrapper">
+                    <img src="./img/bg1.jpg" data-bg="1" alt="Background-img" class="settings-modal__background" />
+                    <img src="./img/bg2.jpg" data-bg="2" alt="Background-img" class="settings-modal__background" />
+                    <img src="./img/bg3.jpg" data-bg="3" alt="Background-img" class="settings-modal__background" />
+                    <img src="./img/bg4.jpg" data-bg="4" alt="Background-img" class="settings-modal__background" />
+                </div>
+            </div>
+        </section>
+        <section class="question-input hidden-modal question modal">
+            <input class='question-input__headline-input' type='text' placeholder='Напишіть питання...'>
+            <form class="question-input__form">
+                <div class="question-form__label-wrapper">
+
+                    <input checked type="radio" class="question-input--variant" id="question-input--aswer1"
+                        data-question-index="1" name="question-input-variant" value="1">
+                    <input class='question-input__input question-input__input--1' type='text'
+                        placeholder='Напишіть варіант...'>
+                </div>
+                <div class="question-form__label-wrapper">
+                    <input type="radio" class="question-input--variant" id="question-input--aswer2"
+                        data-question-index="2" name="question-input-variant" value="2">
+                    <input class='question-input__input question-input__input--2' type='text'
+                        placeholder='Напишіть варіант...'>
+
+                </div>
+                <div class="question-form__label-wrapper">
+                    <input type="radio" class="question-input--variant" id="question-input--aswer3"
+                        data-question-index="3" name="question-input-variant" value="3">
+                    <input class='question-input__input question-input__input--3' type='text'
+                        placeholder='Напишіть варіант...'>
+                </div>
+                <div class="question-form__label-wrapper">
+                    <input type="radio" class="question-input--variant" id="question-input--aswer4"
+                        data-question-index="4" name="question-input-variant" value="4">
+
+                    <input class='question-input__input question-input__input--4' type='text'
+                        placeholder='Напишіть варіант...'>
+            </form>
+            <div class="question__buttons--wrapper">
+                <ul class="question__controls-wrapper">
+                    <li><button type="button" class="question__btn question-input__btn--plus"
+                            data-value='left'>+</button></li>
+                    <li><button type="button" class="question__btn question-input__btn--make-test">Створити
+                            тест</button></li>
+                </ul>
+            </div>
+        </section>
+        <section class="question--js question modal hidden-modal">
+            <h2 class="question__title">Расшифровка css?</h2>
+            <form class="question__form">
+                <div class="question__form--label-wrapper">
+                    <input checked type="radio" class="question__form--variant" id="question__form--answer1"
+                        data-question-index="1" name="answer" value="1">
+                    <label class="question__form--label" for="question__form--answer1"
+                        id="question__form--label-1">Javascript</label>
+                </div>
+                <div class="question__form--label-wrapper">
+                    <input type="radio" class="question__form--variant" id="question__form--answer2"
+                        data-question-index="2" name="answer" value="2">
+                    <label class="question__form--label" for="question__form--answer2"
+                        id="question__form--label-2">C#</label>
+                </div>
+                <div class="question__form--label-wrapper">
+                    <input type="radio" class="question__form--variant" id="question__form--answer3"
+                        data-question-index="3" name="answer" value="3">
+                    <label class="question__form--label" for="question__form--answer3"
+                        id="question__form--label-3">Python</label>
+                </div>
+                <div class="question__form--label-wrapper">
+                    <input type="radio" class="question__form--variant" id="question__form--answer4"
+                        data-question-index="4" name="answer" value="4">
+                    <label class="question__form--label" id="question__form--label-4"
+                        for="question__form--answer4">Cascading style sheets</label>
+                </div>
+            </form>
+            <button type="submit" class="question__submit">Відповісти</button>
+            <div class="question__buttons--wrapper">
+                <ul class="question__controls-wrapper">
+                    <li class="question__controls-item"><button class="question__btn question__btn--arrow"
+                            data-value='left'>&#60;</button></li>
+                    <li class="question__controls-item"><button
+                            class="question__btn question__btn--finish">Фініш</button></li>
+                    <li class="question__controls-item"><button class="question__btn question__btn--arrow"
+                            data-value='right'>&#62;</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="results modal hidden-modal">
+            <div class="results__content-wrapper">
+                <div class="wrapper_results_diagrams">
+                    <h2 class="results__percent"><span class="results__percent--js">100</span>% правильних відповідей
+                    </h2>
+                    <h3 class="results_text_percent">Ти попав в яблучко - цей напрямок ідеально підходить для тебе</h3>
+                </div>
+                <div class="results__diagram-wrapper">
+                    <h2 class="results_about_the_course_title">HTML / CSS</h2>
+
+                    <canvas id="diagram"></canvas>
+                </div>
+            </div>
+
+            <div class="result_btn_wrapper">
+                <button class="results__btn-text results_btn_menu results_btn_menu--menu" type="button">Меню</button>
+                <button class="results__btn-text results_btn_menu results_btn_menu--restart" type="button">Спробувати ще
+                    раз</button>
+
+            </div>
+        </section>
+        <section class="menu hidden-modal">
+            <div class="menu__content-wrapper">
+                <h2 class="menu__headline">Виберіть тест</h2>
+                <div class="menu__test-selection-wrapper">
+                    <button data-section='1' ty pe="button"
+                        class="select-btn--js test-selection__btn">JavaScript</button>
+                    <button data-section='2' type="button" class="select-btn--js test-selection__btn">HTML/CSS</button>
+                    <button data-section='3' type="button" class="select-btn--js test-selection__btn">Java</button>
+                    <button data-section='4' type="button" class="select-btn--js test-selection__btn">Python</button>
+                    <button type="button" class="test-selection__plus">+</button>
+
+                </div>
+            </div>
+        </section>
+        <section id="how-to-use" class="backdrop_how-to-use_modal modal hidden-modal">
+            <div class="how-to-use modal">
+                <div data-modal="how-to-use" class="how-to-use_close close-btn--js close-modal-btn">
+                    <picture><svg class="how-to-use-modal__close-btn">
+                            <use href="./img/symbol-defs.svg#icon-cross"></use>
+                        </svg></picture>
+                </div>
+                <h2 class="how-to-use__headline">Як використовувати сайт?</h2>
+                <div class="how-to-use__wrapper">
+                    <p class="how-to-use__text">На цьому сайті ви можете пройти наші чотири тести для перевірки ваших
+                        знань з JavaScript, HTML/CSS, Java та Python, або
+                        створити свій власний за допомогою кнопки з плюсом розташованої у головному меню</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="audio">
+        <audio data-volume="0.5" loop src="./music/main-theme.mp3" class="audio__main-theme"></audio>
+    </div>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/functions.js" type="module"></script>
+</body>
+
+</html>
