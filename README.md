@@ -1,1 +1,1 @@
-# [Project link](https://dmytrokolisnyk2.github.io/GameOFTeens_JAVASCRIPT/index.html)
+# [Project link](https://maxpopsuy.github.io/gameOfTeens_JS/)
